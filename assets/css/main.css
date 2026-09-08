@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  /* Construct Design System Colors */
+  --app-background: #0a0a0a;
+  --app-foreground: #fafafa;
+  --app-muted: #a1a1aa;
+  --app-accent: #8b5cf6;
+  --app-border: rgba(255, 255, 255, 0.1);
+  --app-canvas-bg: #111111;
+}
+
+/* Font */
+body {
+  font-family: 'Rubik', system-ui, -apple-system, sans-serif;
+}
+
+/* Documentation specific styles */
+.docs-content {
+  @apply prose prose-invert max-w-none;
+}
+
+.docs-content h1 {
+  @apply text-3xl font-bold mb-6;
+}
+
+.docs-content h2 {
+  @apply text-2xl font-bold mt-8 mb-4;
+}
+
+.docs-content h3 {
+  @apply text-xl font-semibold mt-6 mb-3;
+}
+
+.docs-content p {
+  @apply mb-4 leading-relaxed;
+}
+
+.docs-content ul,
+.docs-content ol {
+  @apply mb-4 pl-6;
+}
+
+.docs-content li {
+  @apply mb-2;
+}
+
+.docs-content code {
+  @apply bg-white/10 px-1.5 py-0.5 rounded text-sm;
+}
+
+.docs-content pre {
+  @apply bg-white/5 border border-white/10 rounded-lg p-4 mb-4 overflow-x-auto;
+}
+
+.docs-content pre code {
+  @apply bg-transparent p-0;
+}
+
+.docs-content a {
+  @apply text-purple-400 hover:text-purple-300 underline;
+}
+
+.docs-content blockquote {
+  @apply border-l-4 border-purple-500 pl-4 italic text-white/70;
+}
